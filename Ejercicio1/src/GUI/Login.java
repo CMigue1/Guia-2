@@ -122,7 +122,7 @@ public class Login extends javax.swing.JFrame {
             jUsuario.setText("");
             jPassword.setText("");
         }else{
-            JOptionPane.showMessageDialog(this, "Usuario Incorrecto");
+            JOptionPane.showMessageDialog(this, "Usuario y/o Contraseña Incorrecta");
             jUsuario.setText("");
             jPassword.setText("");
         }
