@@ -117,7 +117,7 @@ public class Login extends javax.swing.JFrame {
         String usuario = jUsuario.getText();
         String password = jPassword.getText();
         
-        if(usuario.equalsIgnoreCase("alumno@ulp.edu.ar") && password.equalsIgnoreCase("12345678")){
+        if(usuario.equals("alumno@ulp.edu.ar") && password.equals("12345678")){
             JOptionPane.showMessageDialog(this, "Bienvenido!");
             jUsuario.setText("");
             jPassword.setText("");
