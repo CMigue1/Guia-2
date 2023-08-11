@@ -107,8 +107,8 @@ public class Convertidor extends javax.swing.JFrame {
     private void btnConvertirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConvertirActionPerformed
         // TODO add your handling code here:
         try{
-            float grados = Float.parseFloat(jtGrados.getText());
-            float F = grados * 9 / 5 + 32; 
+            double grados = Double.parseDouble(jtGrados.getText());
+            double F = grados * 9 / 5 + 32; 
             JOptionPane.showMessageDialog(this,"Convertido a Grados Fahrenheit es: " + F);
             jtGrados.setText("");
         }catch(NumberFormatException nf){

@@ -19,6 +19,8 @@ public class Main {
         
         convertidor.setVisible(true);
         convertidor.setLocationRelativeTo(null);
+        
     }
     
 }
+        
