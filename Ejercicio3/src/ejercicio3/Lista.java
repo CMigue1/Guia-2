@@ -4,26 +4,25 @@
  */
 package ejercicio3;
 
+
+
 /**
  *
  * @author Miguel
  */
 public class Lista {
-    private String producto, categoria;
+    private String nombre;
+    private String categoria;
     private double precio;
 
-    public Lista(String producto, String categoria, double precio) {
-        this.producto = producto;
+    public Lista(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public Lista(String nombre,String categoria, double precio) {
+        this.nombre = nombre;
         this.categoria = categoria;
         this.precio = precio;
-    }
-
-    public String getProducto() {
-        return producto;
-    }
-
-    public void setProducto(String producto) {
-        this.producto = producto;
     }
 
     public String getCategoria() {
@@ -34,6 +33,14 @@ public class Lista {
         this.categoria = categoria;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public double getPrecio() {
         return precio;
     }
@@ -41,10 +48,10 @@ public class Lista {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
-
+    
     @Override
     public String toString() {
-        return "Lista{" + "producto=" + producto + ", categoria=" + categoria + ", precio=" + precio + '}';
+        return categoria;
     }
     
     
